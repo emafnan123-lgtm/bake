@@ -1,0 +1,3453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Violette & Co. | Artisanal Pâtisserie & Garden Coffeehouse</title>
+  <meta name="description" content="A modern, luxurious bakery and boutique coffee shop offering handcrafted pastries, decadent celebration cakes, artisanal sweets, and specialty coffee in an enchanting fairy-lit outdoor garden patio.">
+  <meta name="keywords" content="bakery Lahore, luxury coffee shop, garden café, pastries, cakes, lavender latte, outdoor seating café, artisanal bakery Pakistan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="La Violette & Co. | Pâtisserie & Garden Coffeehouse">
+  <meta property="og:description" content="Handcrafted French pastries, specialty espresso, and decadent cakes served in a serene outdoor botanical garden patio.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Embedded Stylesheet -->
+  <style>
+/* ==========================================================================
+   LA VIOLETTE & CO. | ARTISANAL PÂTISSERIE & GARDEN COFFEEHOUSE
+   Design System: Royal Velvet Purple, Roasted Espresso Mocha & Caramel
+   Modern, Warm, Luxurious, Cozy & Sophisticated Aesthetic
+   ========================================================================== */
+
+:root {
+  /* Royal Velvet Purple Palette */
+  --purple-950: #130a17;
+  --purple-900: #1e0f24;
+  --purple-850: #291431;
+  --purple-800: #381a44;
+  --purple-700: #4e225e;
+  --purple-600: #6d2e83;
+  --purple-500: #8c3ea6;
+  --purple-400: #b56ecc;
+  --purple-300: #d69fee;
+  --purple-200: #ebd3f8;
+  --purple-glow: rgba(140, 62, 166, 0.28);
+  --purple-subtle: rgba(78, 34, 94, 0.35);
+
+  /* Roasted Espresso & Mocha Brown Palette */
+  --brown-950: #120b07;
+  --brown-900: #1d110a;
+  --brown-850: #27160c;
+  --brown-800: #361f12;
+  --brown-700: #4a2c1a;
+  --brown-600: #633b24;
+  --brown-500: #824f31;
+
+  /* Honey Caramel & Bronze Warm Accents */
+  --caramel-600: #a86c2d;
+  --caramel-500: #c9853c;
+  --caramel-400: #e2a157;
+  --caramel-300: #f1bf85;
+  --caramel-glow: rgba(201, 133, 60, 0.3);
+
+  /* Cream, Milk Foam & Warm Tones */
+  --cream-50: #fdfaf6;
+  --cream-100: #f7efe4;
+  --cream-200: #ede0d0;
+  --cream-300: #dfccb7;
+  --text-primary: #fcf9f5;
+  --text-secondary: #d9cbbe;
+  --text-muted: #a69382;
+  --text-dim: #7a6857;
+
+  /* Surfaces & Glassmorphism */
+  --bg-main: #130a17;
+  --bg-surface: #1e0f24;
+  --bg-card: rgba(35, 17, 43, 0.72);
+  --bg-card-hover: rgba(48, 23, 59, 0.88);
+  --bg-espresso: rgba(39, 22, 12, 0.65);
+  --bg-glass: rgba(30, 15, 36, 0.82);
+
+  /* Borders & Shadows */
+  --border-light: rgba(226, 161, 87, 0.16);
+  --border-glow: rgba(201, 133, 60, 0.35);
+  --border-purple: rgba(181, 110, 204, 0.28);
+  --border-active: rgba(226, 161, 87, 0.6);
+
+  --shadow-sm: 0 4px 14px rgba(10, 4, 12, 0.35);
+  --shadow-md: 0 10px 30px -5px rgba(10, 4, 12, 0.6);
+  --shadow-lg: 0 20px 50px -10px rgba(8, 2, 10, 0.8);
+  --shadow-caramel: 0 10px 30px -4px rgba(201, 133, 60, 0.35);
+  --shadow-velvet: 0 12px 35px -5px rgba(109, 46, 131, 0.4);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.65;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(78, 34, 94, 0.25) 0%, transparent 45%),
+    radial-gradient(circle at 90% 75%, rgba(74, 44, 26, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(29, 17, 10, 0.2) 0%, transparent 70%);
+  background-attachment: fixed;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container-narrow {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+}
+
+.text-caramel {
+  color: var(--caramel-400);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #fdfaf6 20%, var(--caramel-300) 60%, var(--caramel-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-purple-gradient {
+  background: linear-gradient(135deg, var(--purple-200) 10%, var(--purple-400) 60%, var(--caramel-400) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--caramel-400);
+  background: rgba(201, 133, 60, 0.12);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-light);
+  margin-bottom: 16px;
+}
+
+.section-tag i {
+  color: var(--purple-400);
+}
+
+.section-title {
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 680px;
+  margin-bottom: 45px;
+  line-height: 1.7;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 28px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-caramel {
+  background: linear-gradient(135deg, var(--caramel-400), var(--caramel-600));
+  color: #170b04;
+  box-shadow: var(--shadow-caramel);
+  font-weight: 700;
+}
+
+.btn-caramel:hover {
+  background: linear-gradient(135deg, var(--caramel-300), var(--caramel-500));
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(201, 133, 60, 0.45);
+}
+
+.btn-velvet {
+  background: linear-gradient(135deg, var(--purple-600), var(--purple-800));
+  color: var(--cream-50);
+  border: 1px solid var(--purple-400);
+  box-shadow: var(--shadow-velvet);
+}
+
+.btn-velvet:hover {
+  background: linear-gradient(135deg, var(--purple-500), var(--purple-700));
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(140, 62, 166, 0.45);
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+  background: rgba(201, 133, 60, 0.15);
+  border-color: var(--caramel-400);
+  color: var(--caramel-300);
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+}
+
+/* Glass Card Helper */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+  overflow: hidden;
+}
+
+.glass-card:hover {
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-md);
+}
+
+/* ==========================================================================
+   TOP BAR
+   ========================================================================== */
+.topbar {
+  background: rgba(19, 10, 23, 0.94);
+  border-bottom: 1px solid var(--border-light);
+  padding: 8px 0;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  position: relative;
+  z-index: 60;
+  backdrop-filter: blur(10px);
+}
+
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.topbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar-item i {
+  color: var(--caramel-400);
+}
+
+.badge-outdoor-open {
+  background: rgba(140, 62, 166, 0.2);
+  color: var(--purple-300);
+  border: 1px solid var(--purple-400);
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.pkr-currency-tag {
+  color: var(--caramel-300);
+  font-weight: 700;
+  background: rgba(201, 133, 60, 0.12);
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-light);
+  font-size: 0.78rem;
+}
+
+/* ==========================================================================
+   MAIN NAVIGATION HEADER
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(19, 10, 23, 0.88);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border-light);
+  z-index: 1000;
+  transition: all var(--transition-smooth);
+}
+
+.site-header.scrolled {
+  background: rgba(15, 8, 18, 0.98);
+  box-shadow: 0 10px 35px rgba(8, 2, 10, 0.5);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 86px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-symbol {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--purple-700), var(--brown-800));
+  border: 1px solid var(--caramel-400);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--caramel-300);
+  font-size: 1.35rem;
+  box-shadow: 0 4px 18px var(--purple-glow);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: 1.45rem;
+  letter-spacing: -0.01em;
+  color: var(--cream-50);
+}
+
+.brand-subtitle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--caramel-400);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--cream-50);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--purple-400), var(--caramel-400));
+  transition: width var(--transition-fast);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cart-icon-btn {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream-100);
+  font-size: 1.15rem;
+  transition: all var(--transition-fast);
+}
+
+.cart-icon-btn:hover {
+  background: rgba(201, 133, 60, 0.15);
+  border-color: var(--caramel-400);
+  color: var(--caramel-300);
+  transform: scale(1.05);
+}
+
+.cart-badge-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--purple-600);
+  border: 2px solid var(--bg-main);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-toggle {
+  display: none;
+  font-size: 1.4rem;
+  color: var(--cream-50);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 90px 0 70px;
+  overflow: hidden;
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-backdrop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: brightness(0.42) contrast(1.1);
+  transform: scale(1.03);
+}
+
+.hero-backdrop::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(180deg, 
+      rgba(19, 10, 23, 0.75) 0%, 
+      rgba(30, 15, 36, 0.6) 40%, 
+      rgba(19, 10, 23, 0.95) 90%, 
+      var(--bg-main) 100%),
+    radial-gradient(circle at 70% 30%, rgba(140, 62, 166, 0.28), transparent 60%),
+    radial-gradient(circle at 20% 70%, rgba(99, 59, 36, 0.35), transparent 60%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(35, 17, 43, 0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border-glow);
+  padding: 8px 22px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--caramel-300);
+  margin-bottom: 24px;
+}
+
+.hero-badge i {
+  color: var(--purple-400);
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 5.2vw, 4.4rem);
+  line-height: 1.15;
+  margin-bottom: 24px;
+  color: #fff;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.7);
+}
+
+.hero-description {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: var(--cream-100);
+  max-width: 720px;
+  margin: 0 auto 36px;
+  line-height: 1.8;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.hero-highlights-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  background: rgba(29, 15, 36, 0.72);
+  border: 1px solid var(--border-light);
+  backdrop-filter: blur(18px);
+  padding: 22px 28px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.highlight-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+}
+
+.highlight-box i {
+  font-size: 1.8rem;
+  color: var(--caramel-400);
+}
+
+.highlight-box strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--cream-50);
+}
+
+.highlight-box span {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   OUTDOOR GARDEN SEATING SPOTLIGHT
+   ========================================================================== */
+.outdoor-section {
+  padding: 100px 0 80px;
+  position: relative;
+}
+
+.outdoor-card-container {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 48px;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(39, 18, 48, 0.8), rgba(30, 16, 11, 0.75));
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-lg);
+}
+
+.outdoor-img-mosaic {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.outdoor-img-main {
+  grid-column: span 2;
+  height: 280px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+}
+
+.outdoor-img-sub {
+  height: 180px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+}
+
+.outdoor-img-mosaic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.outdoor-img-mosaic:hover img {
+  transform: scale(1.05);
+}
+
+.outdoor-floating-tag {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(19, 10, 23, 0.9);
+  border: 1px solid var(--caramel-400);
+  border-radius: var(--radius-full);
+  padding: 8px 18px;
+  color: var(--caramel-300);
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+}
+
+.outdoor-text-side h2 {
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  margin-bottom: 20px;
+}
+
+.outdoor-features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 28px 0 34px;
+}
+
+.outdoor-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.outdoor-feature-item i {
+  color: var(--purple-400);
+  font-size: 1.15rem;
+  margin-top: 3px;
+}
+
+.outdoor-feature-item strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--cream-50);
+}
+
+.outdoor-feature-item span {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   MENU & DELICACIES SECTION
+   ========================================================================== */
+.menu-section {
+  padding: 90px 0;
+  position: relative;
+}
+
+.menu-header-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.menu-filter-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: rgba(30, 15, 36, 0.65);
+  border: 1px solid var(--border-light);
+  padding: 6px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(14px);
+  margin-bottom: 35px;
+}
+
+.filter-btn {
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background: linear-gradient(135deg, var(--caramel-400), var(--caramel-600));
+  color: #170b04;
+  box-shadow: 0 4px 15px var(--caramel-glow);
+}
+
+/* Menu Grid */
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.menu-item-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-smooth);
+}
+
+.menu-item-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-lg);
+}
+
+.item-img-wrapper {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.item-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.menu-item-card:hover .item-img-wrapper img {
+  transform: scale(1.08);
+}
+
+.item-badges {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.badge-pill {
+  background: rgba(19, 10, 23, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border-light);
+  color: var(--cream-100);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.badge-pill.signature {
+  background: rgba(140, 62, 166, 0.85);
+  border-color: var(--purple-300);
+  color: #fff;
+}
+
+.item-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.item-category-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--purple-400);
+  margin-bottom: 6px;
+}
+
+.item-title {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+  color: var(--cream-50);
+}
+
+.item-description {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.item-card-footer {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-price {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--caramel-300);
+}
+
+.item-price .currency-pkr {
+  font-size: 0.95rem;
+  margin-right: 2px;
+  font-weight: 600;
+  color: var(--caramel-400);
+}
+
+.add-cart-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-light);
+  color: var(--cream-100);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.add-cart-btn:hover {
+  background: var(--purple-600);
+  border-color: var(--purple-400);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px var(--purple-glow);
+}
+
+/* ==========================================================================
+   CUSTOM CELEBRATION CAKE STUDIO & PRICE ESTIMATOR
+   ========================================================================== */
+.cake-studio-section {
+  padding: 90px 0;
+  background: linear-gradient(180deg, var(--bg-main) 0%, rgba(35, 17, 43, 0.45) 50%, var(--bg-main) 100%);
+  position: relative;
+}
+
+.studio-card-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-lg);
+}
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 40px;
+}
+
+.studio-step {
+  margin-bottom: 28px;
+}
+
+.studio-step-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--cream-50);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.step-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--caramel-500);
+  color: #170b04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.cake-sizes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.size-pill-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 12px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.size-pill-card input[type="radio"] {
+  display: none;
+}
+
+.size-pill-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.size-pill-card.active {
+  background: rgba(201, 133, 60, 0.18);
+  border-color: var(--caramel-400);
+  box-shadow: 0 0 14px var(--caramel-glow);
+}
+
+.size-pill-card strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--cream-50);
+}
+
+.size-pill-card span {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+/* Flavors Dropdown & Inscription */
+.studio-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.studio-input-wrap select,
+.studio-input-wrap input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-light);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  color: var(--cream-50);
+  font-size: 0.95rem;
+  transition: border-color var(--transition-fast);
+}
+
+.studio-input-wrap select option {
+  background: var(--purple-900);
+  color: var(--cream-50);
+}
+
+.studio-input-wrap select:focus,
+.studio-input-wrap input:focus {
+  border-color: var(--caramel-400);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Finish & Addons */
+.finish-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.finish-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.finish-card input[type="radio"] {
+  display: none;
+}
+
+.finish-card.active {
+  background: rgba(140, 62, 166, 0.2);
+  border-color: var(--purple-400);
+  box-shadow: 0 0 14px var(--purple-glow);
+}
+
+.finish-card strong {
+  display: block;
+  font-size: 0.86rem;
+  color: var(--cream-50);
+}
+
+.finish-card span {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+/* Cake Estimate Sidebar */
+.studio-summary-sidebar {
+  background: rgba(25, 12, 31, 0.95);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-md);
+}
+
+.summary-spec-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.summary-spec-row strong {
+  color: var(--cream-50);
+  text-align: right;
+  max-width: 60%;
+}
+
+.cake-total-callout {
+  background: rgba(201, 133, 60, 0.1);
+  border: 1px dashed var(--caramel-400);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cake-total-callout .label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.cake-total-price {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--caramel-300);
+}
+
+/* ==========================================================================
+   TABLE & GARDEN PATIO RESERVATION SECTION
+   ========================================================================== */
+.reservation-section {
+  padding: 90px 0;
+  position: relative;
+}
+
+.reservation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.reservation-info-card {
+  background: linear-gradient(135deg, rgba(39, 18, 48, 0.75), rgba(30, 16, 11, 0.7));
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  backdrop-filter: blur(16px);
+}
+
+.reservation-perks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.res-perk-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.res-perk-item i {
+  color: var(--caramel-400);
+  font-size: 1.3rem;
+  margin-top: 2px;
+}
+
+.res-perk-item strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--cream-50);
+}
+
+.res-perk-item span {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.reservation-form-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 38px;
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-lg);
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.res-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.res-input-group label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.res-input-group input,
+.res-input-group select,
+.res-input-group textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-light);
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  color: var(--cream-50);
+  font-size: 0.92rem;
+  transition: border-color var(--transition-fast);
+}
+
+.res-input-group select option {
+  background: var(--purple-900);
+  color: var(--cream-50);
+}
+
+.res-input-group input:focus,
+.res-input-group select:focus,
+.res-input-group textarea:focus {
+  border-color: var(--caramel-400);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ==========================================================================
+   PHOTO GALLERY & AMBIANCE
+   ========================================================================== */
+.gallery-section {
+  padding: 80px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 240px;
+  gap: 18px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  cursor: pointer;
+}
+
+.gallery-item.span-2 {
+  grid-column: span 2;
+}
+
+.gallery-item.row-2 {
+  grid-row: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(19, 10, 23, 0.88) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay h4 {
+  font-size: 1.1rem;
+  color: var(--cream-50);
+}
+
+.gallery-overlay span {
+  font-size: 0.78rem;
+  color: var(--caramel-300);
+}
+
+/* ==========================================================================
+   TESTIMONIALS / REVIEWS
+   ========================================================================== */
+.reviews-section {
+  padding: 80px 0;
+  background: rgba(25, 12, 31, 0.4);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.review-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast);
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-glow);
+}
+
+.review-stars {
+  color: var(--caramel-400);
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+
+.review-body {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  font-style: italic;
+}
+
+.reviewer-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--border-light);
+  padding-top: 16px;
+}
+
+.reviewer-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple-700), var(--brown-700));
+  border: 1px solid var(--caramel-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream-50);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.reviewer-meta strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--cream-50);
+}
+
+.reviewer-meta span {
+  font-size: 0.74rem;
+  color: var(--text-dim);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+  background: #0f0712;
+  border-top: 1px solid var(--border-light);
+  padding: 70px 0 30px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-col h4 {
+  font-size: 1.1rem;
+  color: var(--cream-50);
+  margin-bottom: 18px;
+}
+
+.footer-links-list li {
+  margin-bottom: 10px;
+}
+
+.footer-links-list a:hover {
+  color: var(--caramel-400);
+  padding-left: 4px;
+}
+
+.footer-contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 0.88rem;
+}
+
+.footer-contact-list i {
+  color: var(--caramel-400);
+  margin-top: 4px;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border-light);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.social-icon-btn:hover {
+  background: var(--caramel-500);
+  color: #170b04;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   SLIDE-OVER SHOPPING CART DRAWER
+   ========================================================================== */
+.cart-drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 3, 10, 0.75);
+  backdrop-filter: blur(8px);
+  z-index: 2500;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-smooth);
+}
+
+.cart-drawer-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 440px;
+  background: var(--bg-surface);
+  border-left: 1px solid var(--border-glow);
+  z-index: 2600;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.7);
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cart-drawer-overlay.open .cart-drawer {
+  transform: translateX(0);
+}
+
+.cart-drawer-header {
+  padding: 22px 24px;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-drawer-header h3 {
+  font-size: 1.3rem;
+  color: var(--cream-50);
+}
+
+.cart-close-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+.cart-close-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.cart-items-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-empty-message {
+  text-align: center;
+  color: var(--text-muted);
+  margin: auto 0;
+  padding: 40px 20px;
+}
+
+.cart-empty-message i {
+  font-size: 3rem;
+  color: var(--purple-400);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 12px;
+}
+
+.cart-item-thumb {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cart-item-info {
+  flex-grow: 1;
+}
+
+.cart-item-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--cream-50);
+  display: block;
+}
+
+.cart-item-price {
+  font-size: 0.85rem;
+  color: var(--caramel-400);
+  font-weight: 700;
+}
+
+.cart-qty-ctrls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-qty-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--cream-50);
+}
+
+.cart-qty-btn:hover {
+  background: var(--purple-600);
+}
+
+.cart-remove-btn {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  padding: 4px;
+}
+
+.cart-remove-btn:hover {
+  color: #ef4444;
+}
+
+.cart-drawer-footer {
+  padding: 22px 24px;
+  border-top: 1px solid var(--border-light);
+  background: rgba(19, 10, 23, 0.95);
+}
+
+.cart-subtotal-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+
+.cart-subtotal-row strong {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--caramel-300);
+}
+
+/* ==========================================================================
+   MODALS & POPUPS
+   ========================================================================== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 3, 10, 0.82);
+  backdrop-filter: blur(12px);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  max-width: 580px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  padding: 36px;
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-backdrop.open .modal-box {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close-icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--cream-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-icon:hover {
+  background: #ef4444;
+}
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 4000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  background: rgba(30, 15, 36, 0.95);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--cream-50);
+  animation: slideInToast 0.3s forwards;
+}
+
+@keyframes slideInToast {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Floating Action Button */
+.floating-table-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  background: linear-gradient(135deg, var(--caramel-400), var(--caramel-600));
+  color: #170b04;
+  padding: 12px 22px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow-caramel);
+  z-index: 900;
+  transition: all var(--transition-fast);
+}
+
+.floating-table-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(201, 133, 60, 0.5);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero-highlights-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .outdoor-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-items-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .studio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+
+  .navbar {
+    height: 72px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-light);
+    flex-direction: column;
+    padding: 24px;
+    gap: 18px;
+    transform: translateY(-120%);
+    transition: transform var(--transition-smooth);
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .hero-highlights-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-sizes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .finish-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 170px;
+  }
+
+  .gallery-item.span-2 {
+    grid-column: span 2;
+  }
+
+  .gallery-item.row-2 {
+    grid-row: span 1;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-table-btn span {
+    display: none;
+  }
+
+  .floating-table-btn {
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR
+       ========================================================================== -->
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+        <span class="badge-outdoor-open"><i class="fas fa-seedling"></i> Garden Patio Open</span>
+        <span class="topbar-item"><i class="far fa-clock"></i> Daily: 8:00 AM – 11:30 PM</span>
+        <span class="topbar-item"><i class="fas fa-map-marker-alt"></i> 14-C, Gulberg III, Lahore</span>
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-item"><i class="fas fa-truck text-caramel"></i> Free delivery on orders over ₨ 2,500</span>
+        <span class="pkr-currency-tag">All Prices in PKR (₨)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="brand-logo">
+          <div class="logo-symbol">
+            <i class="fas fa-mug-hot"></i>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">LA VIOLETTE</span>
+            <span class="brand-subtitle">PÂTISSERIE & GARDEN CAFÉ</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#menu" class="nav-link">Menu & Brews</a></li>
+          <li><a href="#outdoor" class="nav-link">Outdoor Garden</a></li>
+          <li><a href="#cake-studio" class="nav-link">Cake Studio</a></li>
+          <li><a href="#reservation" class="nav-link">Reserve Table</a></li>
+          <li><a href="#gallery" class="nav-link">Ambiance</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#reviews" class="nav-link">Praise</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="cart-icon-btn" id="cartIconBtn" aria-label="View shopping basket" title="View Order Basket">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-badge-count" id="cartBadgeCount">0</span>
+          </button>
+          <a href="#reservation" class="btn btn-caramel btn-sm">
+            <i class="far fa-calendar-check"></i> Book Table
+          </a>
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="hero-backdrop">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1920&q=85" alt="Cozy bakery café with outdoor ambient lighting and coffee bar">
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i> Artisanal French Pâtisserie & Specialty Coffee Roastery
+      </div>
+
+      <h1 class="hero-title">
+        Where Velvet Pâtisserie Meets <br>
+        <span class="text-gradient">Artisanal Roasted Brews</span>
+      </h1>
+
+      <p class="hero-description">
+        Step into an intimate sanctuary of French viennoiserie, decadent celebration cakes, and velvety single-origin espresso. Linger with friends under fairy-lit jasmine pergolas in our tranquil open-air garden patio.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#menu" class="btn btn-caramel">
+          <i class="fas fa-utensils"></i> Explore The Menu
+        </a>
+        <a href="#outdoor" class="btn btn-velvet">
+          <i class="fas fa-leaf"></i> Discover Garden Seating
+        </a>
+        <a href="#cake-studio" class="btn btn-outline">
+          <i class="fas fa-birthday-cake"></i> Custom Cakes
+        </a>
+      </div>
+
+      <div class="hero-highlights-strip">
+        <div class="highlight-box">
+          <i class="fas fa-bread-slice"></i>
+          <div>
+            <strong>100% French Butter</strong>
+            <span>Hand-rolled Viennoiserie</span>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <i class="fas fa-seedling"></i>
+          <div>
+            <strong>Secret Garden Patio</strong>
+            <span>Fairy-lit Outdoor Veranda</span>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <i class="fas fa-coffee"></i>
+          <div>
+            <strong>Single-Origin Arabica</strong>
+            <span>Micro-Batch Roasted Coffee</span>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <i class="fas fa-heart"></i>
+          <div>
+            <strong>Baked at Dawn</strong>
+            <span>Fresh Artisanal Batches Daily</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DEDICATED OUTDOOR GARDEN SEATING SPOTLIGHT
+       ========================================================================== -->
+  <section class="outdoor-section" id="outdoor">
+    <div class="container">
+      <div class="outdoor-card-container">
+        
+        <!-- Left: Image Mosaic -->
+        <div class="outdoor-img-mosaic">
+          <div class="outdoor-img-main">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Beautiful outdoor garden seating with fairy lights and lush greenery">
+          </div>
+          <div class="outdoor-img-sub">
+            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=600&q=80" alt="Outdoor coffee table with freshly brewed latte and pastry">
+          </div>
+          <div class="outdoor-img-sub">
+            <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=600&q=80" alt="Evening fairy lights over outdoor garden café patio">
+          </div>
+          <div class="outdoor-floating-tag">
+            <i class="fas fa-moon"></i> Twilight Garden Experience
+          </div>
+        </div>
+
+        <!-- Right: Text & Details -->
+        <div class="outdoor-text-side">
+          <span class="section-tag"><i class="fas fa-feather-alt"></i> The Outdoor Sanctuary</span>
+          <h2>Relax Under <span class="text-caramel">Jasmine & Fairy Lights</span></h2>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8;">
+            Escape the bustle of the city into our botanical garden veranda. Encircled by fragrant lavender bushes, creeping ivy, and blooming jasmine, our outdoor patio is designed for slow sips, intimate conversations, and peaceful indulgence.
+          </p>
+
+          <div class="outdoor-features-list">
+            <div class="outdoor-feature-item">
+              <i class="fas fa-fire-alt"></i>
+              <div>
+                <strong>Heated Winter Veranda</strong>
+                <span>Outdoor cozy brass fire pits & plush velvet blankets</span>
+              </div>
+            </div>
+
+            <div class="outdoor-feature-item">
+              <i class="fas fa-umbrella"></i>
+              <div>
+                <strong>Shaded Sun Pergolas</strong>
+                <span>Gentle daytime mist & breezy botanical canopy</span>
+              </div>
+            </div>
+
+            <div class="outdoor-feature-item">
+              <i class="fas fa-paw"></i>
+              <div>
+                <strong>Pet-Friendly Garden</strong>
+                <span>Welcome companions with fresh water bowls</span>
+              </div>
+            </div>
+
+            <div class="outdoor-feature-item">
+              <i class="fas fa-music"></i>
+              <div>
+                <strong>Twilight Acoustic Sets</strong>
+                <span>Soft soul & jazz melodies every weekend evening</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#reservation" class="btn btn-caramel">
+            <i class="fas fa-chair"></i> Reserve Your Garden Table
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MENU & DELICACIES SECTION
+       ========================================================================== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="menu-header-bar">
+        <span class="section-tag"><i class="fas fa-cookie"></i> Handcrafted Offerings</span>
+        <h2 class="section-title">The Pâtisserie & <span class="text-gradient">Espresso Bar</span></h2>
+        <p class="section-subtitle">
+          Every dessert is baked from scratch with natural butter, real Madagascan vanilla, and single-origin cacao. Paired impeccably with micro-batch roasted coffee.
+        </p>
+
+        <!-- Category Filter Tabs -->
+        <div class="menu-filter-nav">
+          <button class="filter-btn active" data-filter="all">All Delicacies</button>
+          <button class="filter-btn" data-filter="pastries">Viennoiserie & Pastries</button>
+          <button class="filter-btn" data-filter="cakes">Cakes & Tarts</button>
+          <button class="filter-btn" data-filter="sweets">Artisanal Sweets</button>
+          <button class="filter-btn" data-filter="coffee">Artisan Coffee</button>
+          <button class="filter-btn" data-filter="beverages">Cold Brews & Sparklers</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Menu Grid -->
+      <div class="menu-items-grid" id="menuItemsGrid">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CUSTOM CELEBRATION CAKE STUDIO & PRICE ESTIMATOR
+       ========================================================================== -->
+  <section class="cake-studio-section" id="cake-studio">
+    <div class="container">
+      <div class="section-header-bar" style="text-align: center; margin-bottom: 40px;">
+        <span class="section-tag"><i class="fas fa-magic"></i> Bespoke Creations</span>
+        <h2 class="section-title">Bespoke Celebration <span class="text-purple-gradient">Cake Studio</span></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Design the celebration centerpiece for your wedding, birthday, or milestone. Choose your sponge, filling, finish, and custom message with live pricing.
+        </p>
+      </div>
+
+      <div class="studio-card-box">
+        <div class="studio-grid">
+          
+          <!-- Left: Builder Controls -->
+          <div class="studio-controls">
+            
+            <!-- Step 1: Size -->
+            <div class="studio-step">
+              <label class="studio-step-label">
+                <span class="step-badge">1</span> Choose Cake Size & Servings
+              </label>
+              <div class="cake-sizes-grid">
+                <label class="size-pill-card">
+                  <input type="radio" name="cakeSize" value="2800" data-weight="1.5 lbs">
+                  <strong>1.5 lbs</strong>
+                  <span>6–8 Servings</span>
+                </label>
+                <label class="size-pill-card active">
+                  <input type="radio" name="cakeSize" value="4200" data-weight="2.5 lbs" checked>
+                  <strong>2.5 lbs</strong>
+                  <span>10–14 Servings</span>
+                </label>
+                <label class="size-pill-card">
+                  <input type="radio" name="cakeSize" value="6500" data-weight="4.0 lbs">
+                  <strong>4.0 lbs</strong>
+                  <span>18–22 Servings</span>
+                </label>
+                <label class="size-pill-card">
+                  <input type="radio" name="cakeSize" value="9800" data-weight="6.0 lbs (2-Tier)">
+                  <strong>6.0 lbs (2-Tier)</strong>
+                  <span>Grand Party (30+)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 2: Flavor Selection -->
+            <div class="studio-step">
+              <label class="studio-step-label">
+                <span class="step-badge">2</span> Signature Sponge & Filling Flavor
+              </label>
+              <div class="studio-input-wrap">
+                <select id="cakeFlavorSelect">
+                  <option value="choco">Belgian 70% Dark Chocolate Ganache & Hazelnut Praline</option>
+                  <option value="violet" selected>Signature Lavender Blueberry Velvet with Cream Cheese</option>
+                  <option value="mocha">Espresso Mocha Truffle with Mascarpone Layering</option>
+                  <option value="pistachio">Sicilian Pistachio Sponge with Raspberry Coulis</option>
+                  <option value="lotus">Salted Caramel Lotus Biscoff Crumb</option>
+                  <option value="vanilla">Tahitian Vanilla Bean with Fresh Seasonal Berries</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Step 3: Frosting Finish -->
+            <div class="studio-step">
+              <label class="studio-step-label">
+                <span class="step-badge">3</span> Exterior Design & Frosting Finish
+              </label>
+              <div class="finish-options-grid">
+                <label class="finish-card active">
+                  <input type="radio" name="cakeFinish" value="0" data-name="Velvet Swiss Meringue" checked>
+                  <strong>Swiss Meringue</strong>
+                  <span>Silky smooth velvet coat</span>
+                </label>
+                <label class="finish-card">
+                  <input type="radio" name="cakeFinish" value="600" data-name="Glossy Mirror Glaze">
+                  <strong>Mirror Glaze (+₨ 600)</strong>
+                  <span>Ultra-shiny marble finish</span>
+                </label>
+                <label class="finish-card">
+                  <input type="radio" name="cakeFinish" value="0" data-name="Rustic Semi-Naked">
+                  <strong>Semi-Naked Rustic</strong>
+                  <span>Visible sponge with florals</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 4: Custom Inscription -->
+            <div class="studio-step" style="margin-bottom: 20px;">
+              <label class="studio-step-label">
+                <span class="step-badge">4</span> Hand-Piped Custom Inscription
+              </label>
+              <div class="studio-input-wrap">
+                <input type="text" id="cakeInscriptionInput" placeholder="e.g. Happy 25th Birthday Ayesha! ✨" maxlength="45">
+              </div>
+            </div>
+
+            <!-- Step 5: Add-on Embellishments -->
+            <div class="studio-step" style="margin-bottom: 0;">
+              <label class="studio-step-label">
+                <span class="step-badge">5</span> Luxury Embellishments
+              </label>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <label style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.03); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-light); cursor: pointer; font-size: 0.85rem;">
+                  <input type="checkbox" class="cake-addon-check" value="500" data-name="24K Gold Leaf & French Macarons" style="accent-color: var(--caramel-400);">
+                  <span>24K Gold Leaf & Macarons (+₨ 500)</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.03); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-light); cursor: pointer; font-size: 0.85rem;">
+                  <input type="checkbox" class="cake-addon-check" value="350" data-name="Celebration Sparkler & Candle Set" style="accent-color: var(--caramel-400);">
+                  <span>Champagne Sparkler Kit (+₨ 350)</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Live Cake Summary & Price -->
+          <div class="studio-summary-sidebar">
+            <div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 18px; color: var(--cream-50); border-bottom: 1px solid var(--border-light); padding-bottom: 12px;">
+                Cake Specification
+              </h3>
+              <div class="summary-spec-row">
+                <span>Cake Weight:</span>
+                <strong id="cakeSummaryWeight">2.5 lbs</strong>
+              </div>
+              <div class="summary-spec-row">
+                <span>Flavor Profile:</span>
+                <strong id="cakeSummaryFlavor">Lavender Blueberry Velvet</strong>
+              </div>
+              <div class="summary-spec-row">
+                <span>Design Finish:</span>
+                <strong id="cakeSummaryFinish">Velvet Swiss Meringue</strong>
+              </div>
+              <div class="summary-spec-row">
+                <span>Lead Time:</span>
+                <strong style="color: var(--caramel-400);">Same-Day (4 hrs) / Next Day</strong>
+              </div>
+            </div>
+
+            <div>
+              <div class="cake-total-callout">
+                <div class="label">Total Custom Cake Price</div>
+                <div class="cake-total-price" id="cakeSummaryTotalPrice">₨ 4,200</div>
+              </div>
+
+              <button class="btn btn-caramel" id="orderCustomCakeBtn" style="width: 100%; padding: 14px;">
+                <i class="fas fa-shopping-bag"></i> Add Custom Cake to Basket
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TABLE & OUTDOOR PATIO RESERVATION
+       ========================================================================== -->
+  <section class="reservation-section" id="reservation">
+    <div class="container">
+      <div class="reservation-grid">
+        
+        <!-- Left: Perks & Atmosphere -->
+        <div class="reservation-info-card">
+          <span class="section-tag"><i class="far fa-clock"></i> Table Bookings</span>
+          <h2 style="font-size: 2.2rem; margin-bottom: 14px;">Reserve Your <span class="text-caramel">Cozy Corner</span></h2>
+          <p style="color: var(--text-secondary); line-height: 1.7;">
+            Whether you are planning an intimate coffee date, an afternoon tea gathering, or a birthday dessert celebration under the stars, our reservation team ensures your table is ready.
+          </p>
+
+          <div class="reservation-perks-list">
+            <div class="res-perk-item">
+              <i class="fas fa-glass-cheers"></i>
+              <div>
+                <strong>Complimentary Welcome Amuse-Bouche</strong>
+                <span>Miniature macaron or iced espresso shot upon arrival</span>
+              </div>
+            </div>
+
+            <div class="res-perk-item">
+              <i class="fas fa-calendar-check"></i>
+              <div>
+                <strong>Guaranteed Outdoor Garden Table</strong>
+                <span>Priority seating in our fairy-lit veranda during peak evening hours</span>
+              </div>
+            </div>
+
+            <div class="res-perk-item">
+              <i class="fas fa-concierge-bell"></i>
+              <div>
+                <strong>Dedicated Table Service</strong>
+                <span>Personal barista assistance for pour-overs & cake pairings</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Reservation Form -->
+        <div class="reservation-form-card">
+          <h3 style="font-size: 1.45rem; margin-bottom: 20px; color: var(--cream-50);">Reserve a Table</h3>
+          <form id="tableReservationForm">
+            
+            <div class="form-row-2">
+              <div class="res-input-group">
+                <label for="resName">Full Name *</label>
+                <input type="text" id="resName" placeholder="e.g. Zainab Malik" required>
+              </div>
+              <div class="res-input-group">
+                <label for="resPhone">WhatsApp Phone *</label>
+                <input type="tel" id="resPhone" placeholder="0300 1234567" required>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="res-input-group">
+                <label for="resGuests">Number of Guests</label>
+                <select id="resGuests">
+                  <option value="2">2 Guests (Couple / Intimate)</option>
+                  <option value="4" selected>4 Guests (Friends / Family)</option>
+                  <option value="6">6 Guests (Small Gathering)</option>
+                  <option value="8">8–12 Guests (Celebration Party)</option>
+                </select>
+              </div>
+              <div class="res-input-group">
+                <label for="resZone">Seating Zone Preference</label>
+                <select id="resZone">
+                  <option value="Secret Garden Floral Patio" selected>Secret Garden Floral Patio (Outdoor)</option>
+                  <option value="Fairy-Lit Veranda">Fairy-Lit Veranda (Semi-Outdoor)</option>
+                  <option value="Indoor Velvet Lounge">Indoor Velvet Lounge (Air Conditioned)</option>
+                  <option value="Fireplace Coffee Corner">Fireplace Coffee Corner (Cozy)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="res-input-group">
+                <label for="resDate">Preferred Date</label>
+                <input type="date" id="resDate" required>
+              </div>
+              <div class="res-input-group">
+                <label for="resTime">Preferred Time Slot</label>
+                <select id="resTime">
+                  <option value="09:00 AM">09:00 AM (Morning Coffee & Croissants)</option>
+                  <option value="12:30 PM">12:30 PM (Midday Garden Brunch)</option>
+                  <option value="04:30 PM">04:30 PM (High Tea & Sweets)</option>
+                  <option value="07:30 PM" selected>07:30 PM (Sunset & Fairy Lights)</option>
+                  <option value="09:30 PM">09:30 PM (Late Night Dessert & Brews)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="res-input-group" style="margin-bottom: 22px;">
+              <label for="resNotes">Special Requests (Optional)</label>
+              <textarea id="resNotes" rows="2" placeholder="Birthday celebration, anniversary flowers, dietary notes..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-caramel" style="width: 100%; padding: 14px;">
+              <i class="far fa-paper-plane"></i> Confirm Table Reservation
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PHOTO GALLERY / AMBIANCE
+       ========================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header-bar" style="text-align: center; margin-bottom: 40px;">
+        <span class="section-tag"><i class="fas fa-camera"></i> Visual Story</span>
+        <h2 class="section-title">Moments at <span class="text-gradient">La Violette</span></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          An artistic glimpse into our bakery trays, latte art, and the enchanting garden glow.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item span-2 row-2">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Evening garden café with fairy lights and patrons">
+          <div class="gallery-overlay">
+            <h4>The Secret Garden at Dusk</h4>
+            <span>Fairy lights and coffee aromas</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=700&q=80" alt="Latte art coffee cup on wooden table">
+          <div class="gallery-overlay">
+            <h4>Single-Origin Latte Art</h4>
+            <span>House-roasted Colombian espresso</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=700&q=80" alt="Pastel French macarons box">
+          <div class="gallery-overlay">
+            <h4>Royal Macaron Assortment</h4>
+            <span>Lavender, caramel, and chocolate</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80" alt="Fresh golden croissants">
+          <div class="gallery-overlay">
+            <h4>Dawn Croissant Batch</h4>
+            <span>100% French butter honeycomb pastry</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Berry chocolate celebration cake">
+          <div class="gallery-overlay">
+            <h4>Signature Velvet Berry Gateau</h4>
+            <span>Valrhona cacao and wild berries</span>
+          </div>
+        </div>
+
+        <div class="gallery-item span-2">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=80" alt="Outdoor wooden veranda with coffee and treats">
+          <div class="gallery-overlay">
+            <h4>Afternoon Veranda Sessions</h4>
+            <span>Sun-dappled tables and artisanal sweets</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       OUR STORY & PHILOSOPHY
+       ========================================================================== -->
+  <section class="outdoor-section" id="story" style="padding-top: 40px;">
+    <div class="container">
+      <div style="background: linear-gradient(135deg, rgba(30, 15, 36, 0.85), rgba(39, 22, 12, 0.8)); border: 1px solid var(--border-glow); border-radius: var(--radius-lg); padding: 50px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+        <div>
+          <span class="section-tag"><i class="fas fa-heart"></i> Our Philosophy</span>
+          <h2 style="font-size: 2.4rem; margin-bottom: 18px;">A Love Letter to <span class="text-caramel">Butter, Beans & Botany</span></h2>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+            La Violette was born from a simple yet passionate vision: to recreate the slow-paced elegance of French pâtisseries blended harmoniously with the lively spirit of specialty third-wave coffee bars.
+          </p>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">
+            We believe that a croissant must shatter delicately upon the first bite, an espresso must possess sweet crema without bitterness, and dessert should always be savored in an inspiring, peaceful open-air garden.
+          </p>
+          <div style="display: flex; gap: 28px; border-top: 1px solid var(--border-light); padding-top: 20px;">
+            <div>
+              <strong style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--caramel-400);">100%</strong>
+              <span style="display: block; font-size: 0.78rem; color: var(--text-secondary);">Real Butter & Dairy</span>
+            </div>
+            <div>
+              <strong style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--caramel-400);">4.9 ★</strong>
+              <span style="display: block; font-size: 0.78rem; color: var(--text-secondary);">5,000+ Happy Guests</span>
+            </div>
+            <div>
+              <strong style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--caramel-400);">Zero</strong>
+              <span style="display: block; font-size: 0.78rem; color: var(--text-secondary);">Artificial Preservatives</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="position: relative; border-radius: var(--radius-md); overflow: hidden; height: 380px; border: 1px solid var(--border-light);">
+          <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=800&q=80" alt="Barista preparing artisan coffee at La Violette espresso bar" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CUSTOMER REVIEWS & PRAISE
+       ========================================================================== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header-bar" style="text-align: center; margin-bottom: 40px;">
+        <span class="section-tag"><i class="fas fa-quote-left"></i> Guest Love</span>
+        <h2 class="section-title">Words From Our <span class="text-purple-gradient">Cherished Guests</span></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          The sweetest compliments from coffee aficionados and pastry lovers alike.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-body">
+            "The outdoor garden patio at night is straight out of a fairy tale! Sitting under the fairy lights with their Signature Lavender Velvet Latte and warm Pain au Chocolat is my weekly ritual. Unmatched elegance in Lahore."
+          </p>
+          <div class="reviewer-profile">
+            <div class="reviewer-avatar">AN</div>
+            <div class="reviewer-meta">
+              <strong>Anum Naeem</strong>
+              <span>Food Columnist • Lahore</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-body">
+            "We ordered our wedding anniversary cake through their custom Cake Studio (the Lavender Blueberry Velvet). Not only was it jaw-droppingly gorgeous, but every single guest asked where it was from. Pure perfection!"
+          </p>
+          <div class="reviewer-profile">
+            <div class="reviewer-avatar">OB</div>
+            <div class="reviewer-meta">
+              <strong>Omar & Bushra</strong>
+              <span>Gulberg III, Lahore</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-body">
+            "Finally, a bakery that takes both French pastry AND third-wave espresso seriously! The cortado had impeccable crema and the mille-feuille layers were perfectly crisp. The garden seating on a breezy evening is sublime."
+          </p>
+          <div class="reviewer-profile">
+            <div class="reviewer-avatar">HA</div>
+            <div class="reviewer-meta">
+              <strong>Hamza Abbasi</strong>
+              <span>Coffee Enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <div class="logo-symbol">
+              <i class="fas fa-mug-hot"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">LA VIOLETTE</span>
+              <span class="brand-subtitle">PÂTISSERIE & GARDEN CAFÉ</span>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;">
+            A sanctuary of warm velvet purple and roasted espresso brown aesthetics. Serving artisanal French pastries, custom celebration cakes, and third-wave espresso in a peaceful garden patio.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bakery & Pastries</h4>
+          <ul class="footer-links-list">
+            <li><a href="#menu">French Butter Croissants</a></li>
+            <li><a href="#menu">Pain au Chocolat</a></li>
+            <li><a href="#menu">Brioche & Danishes</a></li>
+            <li><a href="#cake-studio">Celebration Cakes</a></li>
+            <li><a href="#menu">Parisian Macarons</a></li>
+            <li><a href="#menu">Biscoff Cheesecakes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Coffee & Garden</h4>
+          <ul class="footer-links-list">
+            <li><a href="#menu">Lavender Velvet Latte</a></li>
+            <li><a href="#menu">Spanish Cortado</a></li>
+            <li><a href="#menu">Nitro Sweet Cold Brew</a></li>
+            <li><a href="#outdoor">Outdoor Garden Patio</a></li>
+            <li><a href="#reservation">Table Reservations</a></li>
+            <li><a href="#gallery">Café Ambiance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Find & Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>14-C, Main Boulevard, Gulberg III, Lahore, Pakistan</span>
+            </li>
+            <li>
+              <i class="far fa-clock"></i>
+              <span>Mon – Sun: 8:00 AM – 11:30 PM (Kitchen closes 11:00 PM)</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+92 (300) 123-4567 / +92 (42) 3578-9000</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>bonjour@laviolettebakery.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 La Violette & Co. All Rights Reserved. Artisanal Pâtisserie & Garden Coffeehouse.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Dietary & Allergy Guide</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SLIDE-OVER SHOPPING CART DRAWER
+       ========================================================================== -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3><i class="fas fa-shopping-basket text-caramel"></i> Your Order Basket</h3>
+        <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="cart-items-container" id="cartItemsContainer">
+        <!-- Cart items rendered dynamically -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Total (PKR):</span>
+          <strong id="cartSubtotalAmount">₨ 0</strong>
+        </div>
+        <button class="btn btn-caramel" id="cartCheckoutBtn" style="width: 100%; padding: 14px;">
+          <i class="fas fa-check-circle"></i> Proceed to Order / Checkout
+        </button>
+        <div style="font-size: 0.74rem; color: var(--text-dim); text-align: center; margin-top: 10px;">
+          <i class="fas fa-shield-alt text-caramel"></i> Direct delivery across Lahore or instant garden pickup.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 1: CHECKOUT & DELIVERY / PICKUP MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="orderModal">
+    <div class="modal-box">
+      <button class="modal-close-icon modal-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <span class="section-tag" style="margin-bottom: 8px;"><i class="fas fa-bag-shopping"></i> Complete Order</span>
+      <h3 style="font-size: 1.6rem; color: var(--cream-50); margin-bottom: 6px;">Checkout Your Treats</h3>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 20px;">
+        Order Total: <strong id="orderModalTotal" style="color: var(--caramel-400); font-size: 1.1rem;">₨ 0</strong>
+      </p>
+
+      <form id="checkoutOrderForm">
+        <div class="res-input-group">
+          <label for="orderCustName">Your Name *</label>
+          <input type="text" id="orderCustName" placeholder="e.g. Mahira Khan" required>
+        </div>
+
+        <div class="res-input-group">
+          <label for="orderCustPhone">WhatsApp Phone Number *</label>
+          <input type="tel" id="orderCustPhone" placeholder="0300 1234567" required>
+        </div>
+
+        <div class="res-input-group">
+          <label for="orderType">Order Type</label>
+          <select id="orderType">
+            <option value="Home Delivery" selected>Doorstep Home Delivery (Gulberg, DHA, Cantt, Model Town)</option>
+            <option value="Self-Pickup">Self-Pickup at La Violette Garden Counter</option>
+            <option value="Dine-in Pre-order">Dine-In Pre-Order (Already seated in Garden)</option>
+          </select>
+        </div>
+
+        <div class="res-input-group">
+          <label for="orderAddress">Delivery Address (if applicable)</label>
+          <input type="text" id="orderAddress" placeholder="House #, Street, Phase / Block, Lahore">
+        </div>
+
+        <button type="submit" class="btn btn-caramel" style="width: 100%; padding: 14px; margin-top: 10px;">
+          <i class="fab fa-whatsapp" style="font-size: 1.15rem;"></i> Send Order to WhatsApp Concierge
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: TABLE RESERVATION CONFIRMATION PASS
+       ========================================================================== -->
+  <div class="modal-backdrop" id="reservationConfirmModal">
+    <div class="modal-box" style="text-align: center;">
+      <button class="modal-close-icon modal-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(201, 133, 60, 0.15); border: 2px solid var(--caramel-400); color: var(--caramel-300); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin: 0 auto 16px;">
+        <i class="fas fa-seedling"></i>
+      </div>
+
+      <span class="badge-outdoor-open" style="margin-bottom: 8px; display: inline-flex;">RESERVATION CONFIRMED</span>
+      <h3 style="font-size: 1.65rem; color: var(--cream-50); margin-bottom: 8px;">Table Reserved!</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 22px;">
+        We are preparing your table, <strong id="confirmResName" style="color: var(--cream-50);">Guest</strong>.
+      </p>
+
+      <!-- Pass Card -->
+      <div style="background: rgba(255,255,255,0.03); border: 1px dashed var(--border-glow); border-radius: var(--radius-md); padding: 18px; text-align: left; margin-bottom: 24px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 8px; margin-bottom: 8px;">
+          <span style="font-size: 0.78rem; color: var(--text-dim);">Booking Pass ID:</span>
+          <strong id="confirmResId" style="color: var(--caramel-400); font-family: monospace; font-size: 0.95rem;">VB-RES-4921</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.85rem;">
+          <span style="color: var(--text-secondary);">Party Size:</span>
+          <strong id="confirmResGuests" style="color: #fff;">4 Guests</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.85rem;">
+          <span style="color: var(--text-secondary);">Date & Time:</span>
+          <strong id="confirmResDateTime" style="color: #fff;">Today at 07:30 PM</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+          <span style="color: var(--text-secondary);">Seating Area:</span>
+          <strong id="confirmResZone" style="color: var(--caramel-300);">Secret Garden Floral Patio</strong>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="#" id="resWhatsAppBtn" target="_blank" rel="noopener noreferrer" class="btn btn-caramel" style="width: 100%;">
+          <i class="fab fa-whatsapp"></i> Notify Concierge on WhatsApp
+        </a>
+        <button class="btn btn-outline modal-close-btn" style="width: 100%;">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Table Button -->
+  <a href="#reservation" class="floating-table-btn" title="Reserve Garden Table">
+    <i class="fas fa-chair"></i>
+    <span>Book Garden Table</span>
+  </a>
+
+    <!-- Embedded JavaScript -->
+  <script>
+/* ==========================================================================
+   LA VIOLETTE & CO. | MAIN JAVASCRIPT
+   Menu Filtering, Interactive Cart, Custom Cake Builder, Garden Reservations
+   ========================================================================== */
+
+document.addEventListener('DOMContentLoaded', () => {
+  initNavbar();
+  initMenuRenderer();
+  initCartSystem();
+  initCakeStudio();
+  initTableReservation();
+  initSmoothScroll();
+});
+
+/* ==========================================================================
+   MENU DATABASE (PRICED IN PAKISTANI RUPEES - PKR / ₨)
+   ========================================================================== */
+const MENU_ITEMS = [
+  // Pastries & Croissants
+  {
+    id: 'pastry-1',
+    category: 'pastries',
+    title: 'French Butter Croissant',
+    categoryName: 'Artisanal Pastry',
+    description: 'Baked fresh with 100% Normandy cultured French butter, featuring honeycomb crumb and golden flakiness.',
+    price: 580,
+    badge: 'Best Seller',
+    image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'pastry-2',
+    category: 'pastries',
+    title: 'Belgian Pain au Chocolat',
+    categoryName: 'Artisanal Pastry',
+    description: 'Double batons of 70% Valrhona dark Belgian chocolate encased in caramelized crisp puff pastry.',
+    price: 690,
+    badge: 'Chef Choice',
+    image: 'https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'pastry-3',
+    category: 'pastries',
+    title: 'Wild Blueberry & Lavender Brioche',
+    categoryName: 'Signature Pâtisserie',
+    description: 'Tender brioche swirled with organic French lavender crème and bursting wild blueberry compote.',
+    price: 750,
+    badge: 'Signature',
+    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'pastry-4',
+    category: 'pastries',
+    title: 'Twice-Baked Almond Frangipane',
+    categoryName: 'Artisanal Pastry',
+    description: 'Soaked in Madagascar bourbon vanilla syrup, filled with rich almond frangipane and toasted flakes.',
+    price: 820,
+    badge: 'Must Try',
+    image: 'https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=700&q=80'
+  },
+
+  // Cakes & Tarts
+  {
+    id: 'cake-1',
+    category: 'cakes',
+    title: 'Velvet Violet Blackberry Gateau',
+    categoryName: 'Bespoke Cake Slice',
+    description: 'Moist dark cacao sponge layered with violet-infused blackberry reduction and smooth cream cheese mousse.',
+    price: 890,
+    badge: 'Signature',
+    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'cake-2',
+    category: 'cakes',
+    title: 'Espresso Mocha Tiramisu Entremet',
+    categoryName: 'Gourmet Dessert',
+    description: 'Savoiardi soaked in house-roasted dark espresso, layered with whipped mascarpone cream and Valrhona cocoa.',
+    price: 820,
+    badge: 'Coffee Infused',
+    image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'cake-3',
+    category: 'cakes',
+    title: 'Salted Caramel Dark Chocolate Tart',
+    categoryName: 'Artisanal Tart',
+    description: 'Crisp cocoa sable pastry crust filled with buttery fleur de sel caramel and 64% dark chocolate ganache.',
+    price: 780,
+    badge: 'Decadent',
+    image: 'https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'cake-4',
+    category: 'cakes',
+    title: 'Lotus Biscoff Burnt Cheesecake',
+    categoryName: 'San Sebastián Cheesecake',
+    description: 'Ultra-creamy Spanish burnt cheesecake caramelized to perfection with melted Lotus Biscoff drizzle.',
+    price: 850,
+    badge: 'Popular',
+    image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80'
+  },
+
+  // Sweets & Pâtisserie
+  {
+    id: 'sweet-1',
+    category: 'sweets',
+    title: 'Royal Parisian Macaron Box (6 Pcs)',
+    categoryName: 'French Pâtisserie',
+    description: 'Assorted delicate macarons: Lavender Earl Grey, Dark Espresso Bean, Salted Caramel, Rose & Pistachio.',
+    price: 1650,
+    badge: 'Luxury Box',
+    image: 'https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'sweet-2',
+    category: 'sweets',
+    title: 'Madagascan Vanilla Mille-Feuille',
+    categoryName: 'Classic Pâtisserie',
+    description: 'Three crisp layers of caramelized puff pastry filled with luscious Madagascan vanilla bean mousseline.',
+    price: 790,
+    badge: 'Authentic',
+    image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'sweet-3',
+    category: 'sweets',
+    title: 'Choux Craquelin Trio',
+    categoryName: 'Gourmet Choux',
+    description: 'Crispy crunchy choux buns filled with roasted hazelnut praline, dark mocha cream, and salted caramel.',
+    price: 720,
+    badge: 'Trio Pack',
+    image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80'
+  },
+
+  // Artisan Coffee & Beverages
+  {
+    id: 'coffee-1',
+    category: 'coffee',
+    title: 'Signature Lavender Velvet Latte',
+    categoryName: 'Specialty Coffee',
+    description: 'Espresso pulled from single-origin Colombian beans, infused with pure French lavender and micro-foamed oat milk.',
+    price: 750,
+    badge: 'Signature',
+    image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'coffee-2',
+    category: 'coffee',
+    title: 'Spanish Sweet Cortado',
+    categoryName: 'Espresso Bar',
+    description: 'Equal parts velvety double espresso and warm steamed milk with a rich ribbon of condensed caramel cream.',
+    price: 620,
+    badge: 'Classic',
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'coffee-3',
+    category: 'coffee',
+    title: 'Dark Truffle Hot Chocolate',
+    categoryName: 'Artisan Brew',
+    description: 'Melted Belgian 70% dark chocolate steamed with creamy whole milk and topped with cocoa dusting & marshmallows.',
+    price: 780,
+    badge: 'Cozy Pick',
+    image: 'https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'coffee-4',
+    category: 'beverages',
+    title: 'Nitro Vanilla Sweet Cream Cold Brew',
+    categoryName: 'Cold Brews',
+    description: 'Steeped for 20 hours for ultra-low acidity, infused with food-grade nitrogen and topped with vanilla sweet foam.',
+    price: 720,
+    badge: 'Chilled',
+    image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80'
+  },
+  {
+    id: 'coffee-5',
+    category: 'beverages',
+    title: 'Violet Hibiscus & Berry Sparkler',
+    categoryName: 'Botanical Refresher',
+    description: 'Refreshing brew of wild hibiscus blossoms, butterfly pea violet tint, crushed berries, and sparkling water.',
+    price: 650,
+    badge: 'Garden Fresh',
+    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=700&q=80'
+  }
+];
+
+/* ==========================================================================
+   NAVIGATION & HEADER
+   ========================================================================== */
+function initNavbar() {
+  const header = document.querySelector('.site-header');
+  const toggle = document.getElementById('mobileMenuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
+  if (toggle && navMenu) {
+    toggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+      const icon = toggle.querySelector('i');
+      if (icon) {
+        icon.className = navMenu.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars';
+      }
+    });
+
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        const icon = toggle.querySelector('i');
+        if (icon) icon.className = 'fas fa-bars';
+      });
+    });
+  }
+}
+
+/* ==========================================================================
+   MENU RENDERER & CATEGORY FILTERING
+   ========================================================================== */
+function initMenuRenderer() {
+  const grid = document.getElementById('menuItemsGrid');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  if (!grid) return;
+
+  function render(category = 'all') {
+    grid.innerHTML = '';
+    const items = category === 'all' 
+      ? MENU_ITEMS 
+      : MENU_ITEMS.filter(i => i.category === category);
+
+    items.forEach(item => {
+      const card = document.createElement('article');
+      card.className = 'menu-item-card';
+      card.innerHTML = `
+        <div class="item-img-wrapper">
+          <img src="${item.image}" alt="${item.title}" loading="lazy">
+          <div class="item-badges">
+            <span class="badge-pill ${item.badge === 'Signature' ? 'signature' : ''}">${item.badge}</span>
+          </div>
+        </div>
+        <div class="item-card-body">
+          <span class="item-category-tag">${item.categoryName}</span>
+          <h3 class="item-title">${item.title}</h3>
+          <p class="item-description">${item.description}</p>
+          <div class="item-card-footer">
+            <div class="item-price">
+              <span class="currency-pkr">₨</span>${item.price.toLocaleString()}
+            </div>
+            <button class="add-cart-btn" onclick="addToCart('${item.id}')">
+              <i class="fas fa-plus"></i> Add
+            </button>
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render(btn.getAttribute('data-filter'));
+    });
+  });
+
+  // Initial render
+  render('all');
+}
+
+/* ==========================================================================
+   SHOPPING CART SYSTEM
+   ========================================================================== */
+let cart = [];
+
+function initCartSystem() {
+  const cartBtn = document.getElementById('cartIconBtn');
+  const closeBtn = document.getElementById('cartCloseBtn');
+  const overlay = document.getElementById('cartDrawerOverlay');
+  const checkoutBtn = document.getElementById('cartCheckoutBtn');
+
+  if (cartBtn && overlay) {
+    cartBtn.addEventListener('click', () => overlay.classList.add('open'));
+  }
+  if (closeBtn && overlay) {
+    closeBtn.addEventListener('click', () => overlay.classList.remove('open'));
+  }
+  if (overlay) {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) overlay.classList.remove('open');
+    });
+  }
+
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', () => {
+      if (cart.length === 0) {
+        showToast('Your cart is currently empty! Pick some delicious treats.', 'warning');
+        return;
+      }
+      openOrderModal();
+    });
+  }
+}
+
+function addToCart(itemId) {
+  const item = MENU_ITEMS.find(i => i.id === itemId);
+  if (!item) return;
+
+  const existing = cart.find(i => i.id === itemId);
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({ ...item, qty: 1 });
+  }
+
+  updateCartUI();
+  showToast(`Added ${item.title} to your order!`, 'success');
+}
+
+function updateCartQty(itemId, delta) {
+  const index = cart.findIndex(i => i.id === itemId);
+  if (index === -1) return;
+
+  cart[index].qty += delta;
+  if (cart[index].qty <= 0) {
+    cart.splice(index, 1);
+  }
+  updateCartUI();
+}
+
+function removeFromCart(itemId) {
+  cart = cart.filter(i => i.id !== itemId);
+  updateCartUI();
+}
+
+function updateCartUI() {
+  const badge = document.getElementById('cartBadgeCount');
+  const itemsContainer = document.getElementById('cartItemsContainer');
+  const subtotalEl = document.getElementById('cartSubtotalAmount');
+
+  const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+  const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+  if (badge) badge.textContent = totalQty;
+
+  if (subtotalEl) {
+    subtotalEl.innerHTML = `<span style="font-size: 1rem; color: var(--caramel-400);">₨</span> ${totalPrice.toLocaleString()}`;
+  }
+
+  if (!itemsContainer) return;
+
+  if (cart.length === 0) {
+    itemsContainer.innerHTML = `
+      <div class="cart-empty-message">
+        <i class="fas fa-cookie-bite"></i>
+        <p>Your basket is waiting for fresh pastries & artisanal coffee!</p>
+      </div>
+    `;
+    return;
+  }
+
+  itemsContainer.innerHTML = '';
+  cart.forEach(item => {
+    const row = document.createElement('div');
+    row.className = 'cart-item-row';
+    row.innerHTML = `
+      <img src="${item.image}" alt="${item.title}" class="cart-item-thumb">
+      <div class="cart-item-info">
+        <span class="cart-item-title">${item.title}</span>
+        <div class="cart-item-price">₨ ${(item.price * item.qty).toLocaleString()}</div>
+      </div>
+      <div class="cart-qty-ctrls">
+        <button class="cart-qty-btn" onclick="updateCartQty('${item.id}', -1)"><i class="fas fa-minus"></i></button>
+        <span style="font-size: 0.85rem; font-weight: 700; min-width: 18px; text-align: center;">${item.qty}</span>
+        <button class="cart-qty-btn" onclick="updateCartQty('${item.id}', 1)"><i class="fas fa-plus"></i></button>
+      </div>
+      <button class="cart-remove-btn" onclick="removeFromCart('${item.id}')" title="Remove"><i class="fas fa-trash-alt"></i></button>
+    `;
+    itemsContainer.appendChild(row);
+  });
+}
+
+function openOrderModal() {
+  const modal = document.getElementById('orderModal');
+  if (!modal) return;
+
+  const totalVal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+  const totalDisplay = modal.querySelector('#orderModalTotal');
+  if (totalDisplay) {
+    totalDisplay.textContent = `₨ ${totalVal.toLocaleString()}`;
+  }
+
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+/* ==========================================================================
+   CUSTOM CELEBRATION CAKE STUDIO & PRICE CALCULATOR
+   ========================================================================== */
+function initCakeStudio() {
+  const sizeRadios = document.querySelectorAll('input[name="cakeSize"]');
+  const flavorSelect = document.getElementById('cakeFlavorSelect');
+  const finishRadios = document.querySelectorAll('input[name="cakeFinish"]');
+  const inscriptionInput = document.getElementById('cakeInscriptionInput');
+  const addonBoxes = document.querySelectorAll('.cake-addon-check');
+  const orderCakeBtn = document.getElementById('orderCustomCakeBtn');
+
+  function calculateCake() {
+    const selectedSize = document.querySelector('input[name="cakeSize"]:checked');
+    const sizeBase = selectedSize ? parseFloat(selectedSize.value) : 4200;
+    const sizeWeight = selectedSize ? selectedSize.getAttribute('data-weight') : '2.5 lbs';
+
+    const flavorName = flavorSelect ? flavorSelect.options[flavorSelect.selectedIndex].text : 'Belgian Chocolate';
+
+    const selectedFinish = document.querySelector('input[name="cakeFinish"]:checked');
+    const finishCost = selectedFinish ? parseFloat(selectedFinish.value) : 0;
+    const finishName = selectedFinish ? selectedFinish.getAttribute('data-name') : 'Swiss Meringue';
+
+    let addonsSum = 0;
+    const activeAddons = [];
+    addonBoxes.forEach(b => {
+      if (b.checked) {
+        addonsSum += parseFloat(b.value);
+        activeAddons.push(b.getAttribute('data-name'));
+      }
+    });
+
+    const totalCakeCost = sizeBase + finishCost + addonsSum;
+
+    // Update UI elements
+    const specWeight = document.getElementById('cakeSummaryWeight');
+    const specFlavor = document.getElementById('cakeSummaryFlavor');
+    const specFinish = document.getElementById('cakeSummaryFinish');
+    const specTotal = document.getElementById('cakeSummaryTotalPrice');
+
+    if (specWeight) specWeight.textContent = sizeWeight;
+    if (specFlavor) specFlavor.textContent = flavorName;
+    if (specFinish) specFinish.textContent = finishName;
+    if (specTotal) specTotal.textContent = `₨ ${totalCakeCost.toLocaleString()}`;
+
+    return {
+      sizeWeight,
+      flavorName,
+      finishName,
+      inscription: inscriptionInput ? inscriptionInput.value.trim() : '',
+      activeAddons,
+      totalCost: totalCakeCost
+    };
+  }
+
+  // Event Listeners
+  sizeRadios.forEach(r => {
+    r.addEventListener('change', () => {
+      document.querySelectorAll('.size-pill-card').forEach(c => c.classList.remove('active'));
+      r.closest('.size-pill-card').classList.add('active');
+      calculateCake();
+    });
+  });
+
+  if (flavorSelect) flavorSelect.addEventListener('change', calculateCake);
+
+  finishRadios.forEach(r => {
+    r.addEventListener('change', () => {
+      document.querySelectorAll('.finish-card').forEach(c => c.classList.remove('active'));
+      r.closest('.finish-card').classList.add('active');
+      calculateCake();
+    });
+  });
+
+  if (inscriptionInput) inscriptionInput.addEventListener('input', calculateCake);
+  addonBoxes.forEach(b => b.addEventListener('change', calculateCake));
+
+  if (orderCakeBtn) {
+    orderCakeBtn.addEventListener('click', () => {
+      const cakeData = calculateCake();
+      const customItem = {
+        id: 'custom-cake-' + Date.now(),
+        category: 'cakes',
+        title: `Custom ${cakeData.sizeWeight} Cake (${cakeData.flavorName})`,
+        categoryName: 'Custom Pâtisserie',
+        description: `Finish: ${cakeData.finishName}${cakeData.inscription ? ` | Message: "${cakeData.inscription}"` : ''}`,
+        price: cakeData.totalCost,
+        image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80',
+        qty: 1
+      };
+
+      cart.push(customItem);
+      updateCartUI();
+      document.getElementById('cartDrawerOverlay')?.classList.add('open');
+      showToast('Custom Celebration Cake added to your basket!', 'success');
+    });
+  }
+
+  calculateCake();
+}
+
+/* ==========================================================================
+   OUTDOOR GARDEN TABLE RESERVATIONS
+   ========================================================================== */
+function initTableReservation() {
+  const form = document.getElementById('tableReservationForm');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('resName').value.trim();
+    const phone = document.getElementById('resPhone').value.trim();
+    const guests = document.getElementById('resGuests').value;
+    const date = document.getElementById('resDate').value;
+    const time = document.getElementById('resTime').value;
+    const zone = document.getElementById('resZone').value;
+    const notes = document.getElementById('resNotes').value.trim();
+
+    if (!name || !phone) {
+      showToast('Please provide your name and contact phone.', 'warning');
+      return;
+    }
+
+    const bookingId = 'VB-RES-' + Math.floor(1000 + Math.random() * 9000);
+
+    // Show confirmation modal
+    showReservationConfirmation({
+      id: bookingId,
+      name,
+      phone,
+      guests,
+      date,
+      time,
+      zone,
+      notes
+    });
+  });
+
+  // Handle Order Modal Submit
+  const orderForm = document.getElementById('checkoutOrderForm');
+  if (orderForm) {
+    orderForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const custName = document.getElementById('orderCustName').value.trim();
+      const custPhone = document.getElementById('orderCustPhone').value.trim();
+      const orderType = document.getElementById('orderType').value;
+      const orderAddress = document.getElementById('orderAddress').value.trim();
+
+      const totalVal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+      const itemsList = cart.map(i => `• ${i.qty}x ${i.title} (₨ ${(i.price * i.qty).toLocaleString()})`).join('\n');
+
+      const waMessage = encodeURIComponent(
+        `*NEW BAKERY & COFFEE ORDER*\n` +
+        `---------------------------\n` +
+        `*Customer:* ${custName}\n` +
+        `*Phone:* ${custPhone}\n` +
+        `*Type:* ${orderType}\n` +
+        (orderType === 'Delivery' ? `*Address:* ${orderAddress}\n` : '') +
+        `---------------------------\n` +
+        `*Order Items:*\n${itemsList}\n` +
+        `---------------------------\n` +
+        `*Total:* ₨ ${totalVal.toLocaleString()}\n\n` +
+        `Please confirm my bakery order!`
+      );
+
+      // Open WhatsApp link
+      window.open(`https://wa.me/923001234567?text=${waMessage}`, '_blank');
+
+      closeAllModals();
+      cart = [];
+      updateCartUI();
+      document.getElementById('cartDrawerOverlay')?.classList.remove('open');
+      showToast('Order submitted! Redirecting to WhatsApp concierge...', 'success');
+    });
+  }
+}
+
+function showReservationConfirmation(res) {
+  closeAllModals();
+  const modal = document.getElementById('reservationConfirmModal');
+  if (!modal) return;
+
+  modal.querySelector('#confirmResId').textContent = res.id;
+  modal.querySelector('#confirmResName').textContent = res.name;
+  modal.querySelector('#confirmResGuests').textContent = `${res.guests} Guests`;
+  modal.querySelector('#confirmResDateTime').textContent = `${res.date || 'Today'} at ${res.time}`;
+  modal.querySelector('#confirmResZone').textContent = res.zone;
+
+  const waBtn = modal.querySelector('#resWhatsAppBtn');
+  if (waBtn) {
+    const textMsg = encodeURIComponent(
+      `Hello La Violette! I would like to confirm my garden table reservation:\n*Booking ID:* ${res.id}\n*Name:* ${res.name}\n*Guests:* ${res.guests}\n*Date & Time:* ${res.date} at ${res.time}\n*Seating Area:* ${res.zone}`
+    );
+    waBtn.href = `https://wa.me/923001234567?text=${textMsg}`;
+  }
+
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  showToast('Table reservation request placed!', 'success');
+}
+
+/* ==========================================================================
+   GLOBAL UTILITIES & TOAST
+   ========================================================================== */
+function closeAllModals() {
+  document.querySelectorAll('.modal-backdrop').forEach(m => m.classList.remove('open'));
+  document.body.style.overflow = '';
+}
+
+function initSmoothScroll() {
+  document.querySelectorAll('.modal-close-icon, .modal-close-btn').forEach(btn => {
+    btn.addEventListener('click', closeAllModals);
+  });
+
+  document.querySelectorAll('.modal-backdrop').forEach(backdrop => {
+    backdrop.addEventListener('click', (e) => {
+      if (e.target === backdrop) closeAllModals();
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAllModals();
+  });
+}
+
+function showToast(message, type = 'info') {
+  let container = document.querySelector('.toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.className = 'toast-container';
+    document.body.appendChild(container);
+  }
+
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+
+  const iconClass = type === 'success' ? 'fa-check-circle' : type === 'warning' ? 'fa-exclamation-circle' : 'fa-coffee';
+  const iconColor = type === 'success' ? 'var(--caramel-400)' : type === 'warning' ? '#f59e0b' : 'var(--purple-400)';
+
+  toast.innerHTML = `
+    <i class="fas ${iconClass}" style="color: ${iconColor}; font-size: 1.15rem;"></i>
+    <span>${message}</span>
+  `;
+
+  container.appendChild(toast);
+
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateX(50px)';
+    toast.style.transition = 'all 0.3s ease';
+    setTimeout(() => toast.remove(), 300);
+  }, 3500);
+}
+
+  </script>
+</body>
+</html>
